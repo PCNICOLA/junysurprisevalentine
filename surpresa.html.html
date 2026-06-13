@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Surpresa para Você ❤️</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.card{
+    background:white;
+    width:400px;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+h1{
+    color:#e91e63;
+}
+
+button{
+    background:#e91e63;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+#presente{
+    display:none;
+    margin-top:20px;
+    animation:aparecer 1s;
+}
+
+.valor{
+    font-size:40px;
+    color:#4CAF50;
+    font-weight:bold;
+}
+
+@keyframes aparecer{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1>💖 Uma Surpresa 💖</h1>
+
+    <p>
+        Você é uma pessoa muito especial para mim.
+        Tenho um presente para você!
+    </p>
+
+    <button onclick="abrirPresente()">
+        Abrir Presente 🎁
+    </button>
+
+    <div id="presente">
+        <h2>🎉 Parabéns! 🎉</h2>
+        <p>Você ganhou um vale-presente de</p>
+        <div class="valor">R$ 150,00</div>
+        <p>💝 Use como quiser! 💝</p>
+        <h3>Te amo ❤️</h3>
+    </div>
+</div>
+
+<script>
+function abrirPresente(){
+    document.getElementById("presente").style.display = "block";
+}
+</script>
+
+</body>
+</html>
